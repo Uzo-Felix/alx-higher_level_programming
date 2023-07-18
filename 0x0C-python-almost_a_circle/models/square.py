@@ -10,10 +10,10 @@ class Square(Rectangle):
         """Initialize a new Square.
 
         Args:
-            size (int): size of the new Square.
-            x (int): x coordinate of the new Square.
-            y (int): y coordinate of the new Square.
-            id (int): identity of the new Square.
+            size (int): The size of the new Square.
+            x (int): The x coordinate of the new Square.
+            y (int): The y coordinate of the new Square.
+            id (int): The identity of the new Square.
         """
         super().__init__(size, size, x, y, id)
 

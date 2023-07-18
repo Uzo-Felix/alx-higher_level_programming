@@ -21,7 +21,7 @@ class Base:
         """Initialize a new Base.
 
         Args:
-            id (int): Identity of the new Base.
+            id (int): The identity of the new Base.
         """
         if id is not None:
             self.id = id
@@ -31,7 +31,7 @@ class Base:
 
     @staticmethod
     def to_json_string(list_dictionaries):
-        """Returns the JSON string representation of list_dictionaries.
+        """Return the JSON serialization of a list of dicts.
 
         Args:
             list_dictionaries (list): A list of dictionaries.
@@ -42,7 +42,7 @@ class Base:
 
     @classmethod
     def save_to_file(cls, list_objs):
-        """Writes the JSON string representation of list_objs to a file.
+        """Write the JSON serialization of a list of objects to a file.
 
         Args:
             list_objs (list): A list of inherited Base instances.

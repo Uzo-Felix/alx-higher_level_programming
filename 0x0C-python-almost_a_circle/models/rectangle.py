@@ -10,11 +10,11 @@ class Rectangle(Base):
         """Initialize a new Rectangle.
 
         Args:
-            width (int): width of the new Rectangle.
-            height (int): height of the new Rectangle.
-            x (int): x coordinate of the new Rectangle.
-            y (int): y coordinate of the new Rectangle.
-            id (int): identity of the new Rectangle.
+            width (int): The width of the new Rectangle.
+            height (int): The height of the new Rectangle.
+            x (int): The x coordinate of the new Rectangle.
+            y (int): The y coordinate of the new Rectangle.
+            id (int): The identity of the new Rectangle.
         Raises:
             TypeError: If either of width or height is not an int.
             ValueError: If either of width or height <= 0.
@@ -27,7 +27,7 @@ class Rectangle(Base):
         self.y = y
         super().__init__(id)
 
-        @property
+    @property
     def width(self):
         """Set/get the width of the Rectangle."""
         return self.__width
@@ -141,7 +141,7 @@ class Rectangle(Base):
                 elif k == "y":
                     self.y = v
 
-        def to_dictionary(self):
+    def to_dictionary(self):
         """Return the dictionary representation of a Rectangle."""
         return {
             "id": self.id,
