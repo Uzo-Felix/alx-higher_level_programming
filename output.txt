@@ -1,0 +1,1081 @@
+./LIT_LMS_Backend
+├── Dockerfile
+├── ErrorLog.txt
+├── hs_err_pid13440.log
+├── hs_err_pid14084.log
+├── hs_err_pid19008.log
+├── hs_err_pid22856.log
+├── hs_err_pid3768.log
+├── k8s
+│   └── base
+│       ├── deployment.yaml
+│       ├── ingress.yaml
+│       └── svc.yaml
+├── mvnw
+├── mvnw.cmd
+├── pom.xml
+├── README.md
+├── replay_pid13440.log
+├── replay_pid14084.log
+├── replay_pid22856.log
+├── replay_pid3768.log
+├── sonar-project.properties
+└── src
+    ├── main
+    │   ├── java
+    │   │   └── com
+    │   │       └── lit
+    │   │           └── lms
+    │   │               ├── controller
+    │   │               │   ├── AssignmentController.java
+    │   │               │   ├── CourseController.java
+    │   │               │   ├── CustomController.java
+    │   │               │   ├── DepartmentController.java
+    │   │               │   ├── FeedBackController.java
+    │   │               │   ├── Notification.java
+    │   │               │   ├── PagesController.java
+    │   │               │   ├── QuizController.java
+    │   │               │   ├── QuizMarkController.java
+    │   │               │   ├── StudentController.java
+    │   │               │   ├── StudentReportController.java
+    │   │               │   ├── TeacherController.java
+    │   │               │   ├── UrlController.java
+    │   │               │   └── UserController.java
+    │   │               ├── dto
+    │   │               │   ├── AdminDTO.java
+    │   │               │   ├── AnsweredQuestionDTO.java
+    │   │               │   ├── AssignmentDTO.java
+    │   │               │   ├── AssignmentUploadDTO.java
+    │   │               │   ├── CatalogDTO.java
+    │   │               │   ├── CCStudentdto.java
+    │   │               │   ├── CourseDTO.java
+    │   │               │   ├── CoursesDTO.java
+    │   │               │   ├── CoursesDTOs.java
+    │   │               │   ├── DepartmentCourseDTO.java
+    │   │               │   ├── DepartmentDTO.java
+    │   │               │   ├── DepartmentnDTO.java
+    │   │               │   ├── DepartmentStudentDTO.java
+    │   │               │   ├── DepartmentsuDTO.java
+    │   │               │   ├── DepartmentTeacherDTO.java
+    │   │               │   ├── EmailDto.java
+    │   │               │   ├── EnquiriresDTO.java
+    │   │               │   ├── ExcelDataCCStudent.java
+    │   │               │   ├── ExcelDataCorporateCourse.java
+    │   │               │   ├── ExcelDataCourses.java
+    │   │               │   ├── ExcelDataEnquiries.java
+    │   │               │   ├── ExcelDataICStudent.java
+    │   │               │   ├── ExcelDataIndividualCourse.java
+    │   │               │   ├── ExcelDataStudent.java
+    │   │               │   ├── ExcelDataTeacher.java
+    │   │               │   ├── FeedBackAnswerDTO.java
+    │   │               │   ├── FeedBackDTO.java
+    │   │               │   ├── FeedBackQuestionDTO.java
+    │   │               │   ├── ICourseDTO.java
+    │   │               │   ├── ICStudentdto.java
+    │   │               │   ├── IdDto.java
+    │   │               │   ├── ModulesDTO.java
+    │   │               │   ├── ProfilepicsDTO.java
+    │   │               │   ├── QuizDTO.java
+    │   │               │   ├── QuizMarkDTO.java
+    │   │               │   ├── QuizM.java
+    │   │               │   ├── QuizQuestionDTO.java
+    │   │               │   ├── QuizQuestion.java
+    │   │               │   ├── RatingDTOInstructor.java
+    │   │               │   ├── RatingDTO.java
+    │   │               │   ├── RegisterDTO.java
+    │   │               │   ├── StudentAssignmentDTO.java
+    │   │               │   ├── StudentCompletion1DTO.java
+    │   │               │   ├── StudentDTO.java
+    │   │               │   ├── StudentReport1DTO.java
+    │   │               │   ├── StudentReport2DTO.java
+    │   │               │   ├── StudentReport3DTO.java
+    │   │               │   ├── StudentReport4DTO.java
+    │   │               │   ├── StudentReport5DTO.java
+    │   │               │   ├── StudentReport6DTO.java
+    │   │               │   ├── StudentReport7DTO.java
+    │   │               │   ├── StudentReport8DTO.java
+    │   │               │   ├── StudentReport9DTO.java
+    │   │               │   ├── SubmissionDTO.java
+    │   │               │   ├── TeacherDTO.java
+    │   │               │   └── TestScroeDTO.java
+    │   │               ├── entities
+    │   │               │   ├── Roles.java
+    │   │               │   └── User.java
+    │   │               ├── exceptions
+    │   │               │   └── ResourceNotFoundException.java
+    │   │               ├── LitAppApplication.java
+    │   │               ├── model
+    │   │               │   ├── Acustomdata.java
+    │   │               │   ├── Admin.java
+    │   │               │   ├── AnsweredQuestion.java
+    │   │               │   ├── ApplicationUser.java
+    │   │               │   ├── Assignment.java
+    │   │               │   ├── Catalog.java
+    │   │               │   ├── Categories.java
+    │   │               │   ├── CCEnrollment.java
+    │   │               │   ├── CCStudent.java
+    │   │               │   ├── Ccustomdata.java
+    │   │               │   ├── ConfirmationToken.java
+    │   │               │   ├── CorporateCourse.java
+    │   │               │   ├── Course.java
+    │   │               │   ├── Customdata.java
+    │   │               │   ├── Department.java
+    │   │               │   ├── Enquiries.java
+    │   │               │   ├── Enrollment.java
+    │   │               │   ├── FeedBackAnswer.java
+    │   │               │   ├── Feedback.java
+    │   │               │   ├── FeedBackQuestion.java
+    │   │               │   ├── ICEnrollment.java
+    │   │               │   ├── ICStudent.java
+    │   │               │   ├── idcheck2.java
+    │   │               │   ├── idcheck.java
+    │   │               │   ├── IndividualCourse.java
+    │   │               │   ├── Modules.java
+    │   │               │   ├── PayStackData.java
+    │   │               │   ├── PaystackdataM.java
+    │   │               │   ├── Question.java
+    │   │               │   ├── Quiz.java
+    │   │               │   ├── QuizMark.java
+    │   │               │   ├── Rating.java
+    │   │               │   ├── Reviews.java
+    │   │               │   ├── StudentAssignment.java
+    │   │               │   ├── StudentAssignmentPK.java
+    │   │               │   ├── Student.java
+    │   │               │   ├── Tcustomdata.java
+    │   │               │   ├── Teacher.java
+    │   │               │   ├── TEnrollment.java
+    │   │               │   ├── UserForm.java
+    │   │               │   ├── VerifyPayStackTransaction.java
+    │   │               │   └── VeryfyTransactionServlet.java
+    │   │               ├── repository
+    │   │               │   ├── AdminRepository.java
+    │   │               │   ├── AnsweredQuestionRepository.java
+    │   │               │   ├── AssignmentRepository.java
+    │   │               │   ├── CatalogRepository.java
+    │   │               │   ├── CategoriesRepository.java
+    │   │               │   ├── CCSRepository.java
+    │   │               │   ├── ConfirmationTokenRepository.java
+    │   │               │   ├── CorporateCourseRepository.java
+    │   │               │   ├── CourseRepository.java
+    │   │               │   ├── DepartmentRepository.java
+    │   │               │   ├── EnquiriesRepository.java
+    │   │               │   ├── FeedBackAnswerRepository.java
+    │   │               │   ├── FeedBackQuestionRepository.java
+    │   │               │   ├── FeedbackRepository.java
+    │   │               │   ├── ICSRepository.java
+    │   │               │   ├── IndividualCourseRepository.java
+    │   │               │   ├── ModulesRepository.java
+    │   │               │   ├── QuestionRepository.java
+    │   │               │   ├── QuizMarkRepository.java
+    │   │               │   ├── QuizRepository.java
+    │   │               │   ├── RatingRepository.java
+    │   │               │   ├── ReviewsRepository.java
+    │   │               │   ├── RoleRepository.java
+    │   │               │   ├── StudentAssignmentRepository.java
+    │   │               │   ├── StudentRepository.java
+    │   │               │   ├── TeacherRepository.java
+    │   │               │   └── UserRepository.java
+    │   │               ├── security
+    │   │               │   ├── Config.java
+    │   │               │   ├── JWTAuthenticationFilter.java
+    │   │               │   ├── JWTAuthorizationFilter.java
+    │   │               │   ├── MySimpleUrlAuthenticationSuccessHandler.java
+    │   │               │   ├── SecurityConfig.java
+    │   │               │   ├── SecurityConstants.java
+    │   │               │   ├── SwaggerConfig.java
+    │   │               │   ├── WebSecurityConfig2.java
+    │   │               │   └── WebSecurity.java
+    │   │               ├── services
+    │   │               │   ├── AssignmentService.java
+    │   │               │   ├── constants
+    │   │               │   │   └── Definitions.java
+    │   │               │   ├── core
+    │   │               │   │   ├── ApiConnection.java
+    │   │               │   │   ├── ApiQuery.java
+    │   │               │   │   ├── Customers.java
+    │   │               │   │   ├── Keys.java
+    │   │               │   │   ├── Pages.java
+    │   │               │   │   ├── PaystackInline.java
+    │   │               │   │   ├── Plans.java
+    │   │               │   │   ├── Subscriptions.java
+    │   │               │   │   └── Transactions.java
+    │   │               │   ├── CourseService.java
+    │   │               │   ├── DeparmentTeacherService.java
+    │   │               │   ├── DepartmentCourseService.java
+    │   │               │   ├── DepartmentService.java
+    │   │               │   ├── DepartmentStudentService.java
+    │   │               │   ├── EmailSenderService.java
+    │   │               │   ├── ExportExcelUtilsCCStudent.java
+    │   │               │   ├── ExportExcelUtilsCorporateCourse.java
+    │   │               │   ├── ExportExcelUtilsCourse.java
+    │   │               │   ├── ExportExcelUtilsEnquiries.java
+    │   │               │   ├── ExportExcelUtilsICStudent.java
+    │   │               │   ├── ExportExcelUtilsIndividualCourse.java
+    │   │               │   ├── ExportExcelUtilsStudent.java
+    │   │               │   ├── ExportExcelUtilsTeacher.java
+    │   │               │   ├── FeedbackService.java
+    │   │               │   ├── impl
+    │   │               │   │   ├── SecurityServiceImpl.java
+    │   │               │   │   ├── UserDetailsServiceImpl.java
+    │   │               │   │   └── UserServiceImpl.java
+    │   │               │   ├── ModulesService.java
+    │   │               │   ├── QuizMarkService.java
+    │   │               │   ├── QuizService.java
+    │   │               │   ├── RatingService.java
+    │   │               │   ├── SecurityService.java
+    │   │               │   ├── StudentReportService.java
+    │   │               │   ├── StudentService.java
+    │   │               │   ├── TeacherService.java
+    │   │               │   ├── UserService.java
+    │   │               │   └── UserValidator.java
+    │   │               └── utils
+    │   │                   └── Utils.java
+    │   └── resources
+    │       ├── application.properties
+    │       ├── data.sql
+    │       ├── Keys.json
+    │       ├── mentorme.jks
+    │       ├── static
+    │       │   ├── assets
+    │       │   │   ├── css
+    │       │   │   │   ├── ace-responsive-menu.css
+    │       │   │   │   ├── all.min.css
+    │       │   │   │   ├── animate.css
+    │       │   │   │   ├── aos.css
+    │       │   │   │   ├── black-dashboard.css
+    │       │   │   │   ├── black-dashboard.css.map
+    │       │   │   │   ├── black-dashboard.min.css
+    │       │   │   │   ├── bootstrap.css
+    │       │   │   │   ├── bootstrap.css.map
+    │       │   │   │   ├── bootstrap-grid.css
+    │       │   │   │   ├── bootstrap-grid.css.map
+    │       │   │   │   ├── bootstrap-grid.min.css
+    │       │   │   │   ├── bootstrap-grid.min.css.map
+    │       │   │   │   ├── bootstrap.min.css
+    │       │   │   │   ├── bootstrap.min.css.map
+    │       │   │   │   ├── bootstrap-reboot.css
+    │       │   │   │   ├── bootstrap-reboot.css.map
+    │       │   │   │   ├── bootstrap-reboot.min.css
+    │       │   │   │   ├── bootstrap-reboot.min.css.map
+    │       │   │   │   ├── bootstrap-select.min.css
+    │       │   │   │   ├── boxicons.css
+    │       │   │   │   ├── boxicons.min.css
+    │       │   │   │   ├── cocoon.css
+    │       │   │   │   ├── cocoon-dashboard.css
+    │       │   │   │   ├── cocoon-mdl.css
+    │       │   │   │   ├── common.css
+    │       │   │   │   ├── et-line.css
+    │       │   │   │   ├── flaticon.css
+    │       │   │   │   ├── fontapi1.css
+    │       │   │   │   ├── jquery.dataTables.min.css
+    │       │   │   │   ├── jquery.fancybox.min.css
+    │       │   │   │   ├── jquery-ui.min.css
+    │       │   │   │   ├── litlms.css
+    │       │   │   │   ├── megadropdown.css
+    │       │   │   │   ├── menu.css
+    │       │   │   │   ├── nice-select.css
+    │       │   │   │   ├── nucleo-icons.css
+    │       │   │   │   ├── owl.carousel.min.css
+    │       │   │   │   ├── responsive.css
+    │       │   │   │   ├── slick.css
+    │       │   │   │   ├── style2.css
+    │       │   │   │   ├── style.css
+    │       │   │   │   ├── styles.css
+    │       │   │   │   ├── styling.min.css
+    │       │   │   │   ├── theme-02.css
+    │       │   │   │   ├── themify-icons.css
+    │       │   │   │   └── yui-moodlesimple.css
+    │       │   │   ├── demo
+    │       │   │   │   ├── demo.css
+    │       │   │   │   └── demo.js
+    │       │   │   ├── fonts
+    │       │   │   │   ├── nucleo.eot
+    │       │   │   │   ├── nucleo.ttf
+    │       │   │   │   ├── nucleo.woff
+    │       │   │   │   └── nucleo.woff2
+    │       │   │   ├── img
+    │       │   │   │   ├── 12345.png
+    │       │   │   │   ├── anime3.png
+    │       │   │   │   ├── anime6.png
+    │       │   │   │   ├── apple-icon.png
+    │       │   │   │   ├── bg5.jpg
+    │       │   │   │   ├── default-avatar.png
+    │       │   │   │   ├── emilyz.jpg
+    │       │   │   │   ├── favicon.png
+    │       │   │   │   ├── header.jpg
+    │       │   │   │   ├── img_3115.jpg
+    │       │   │   │   ├── james.jpg
+    │       │   │   │   ├── mike.jpg
+    │       │   │   │   └── now-logo.png
+    │       │   │   ├── js
+    │       │   │   │   ├── black-dashboard.js
+    │       │   │   │   ├── black-dashboard.js.map
+    │       │   │   │   ├── black-dashboard.min.js
+    │       │   │   │   ├── core
+    │       │   │   │   │   ├── bootstrap.min.js
+    │       │   │   │   │   ├── jquery.min.js
+    │       │   │   │   │   └── popper.min.js
+    │       │   │   │   ├── plugins
+    │       │   │   │   │   ├── bootstrap-notify.js
+    │       │   │   │   │   ├── chartjs.min.js
+    │       │   │   │   │   └── perfect-scrollbar.jquery.min.js
+    │       │   │   │   └── require.min.js
+    │       │   │   └── scss
+    │       │   │       ├── black-dashboard
+    │       │   │       │   ├── bootstrap
+    │       │   │       │   │   ├── _alert.scss
+    │       │   │       │   │   ├── _badge.scss
+    │       │   │       │   │   ├── bootstrap-grid.scss
+    │       │   │       │   │   ├── bootstrap-reboot.scss
+    │       │   │       │   │   ├── bootstrap.scss
+    │       │   │       │   │   ├── _breadcrumb.scss
+    │       │   │       │   │   ├── _button-group.scss
+    │       │   │       │   │   ├── _buttons.scss
+    │       │   │       │   │   ├── _card.scss
+    │       │   │       │   │   ├── _carousel.scss
+    │       │   │       │   │   ├── _close.scss
+    │       │   │       │   │   ├── _code.scss
+    │       │   │       │   │   ├── _custom-forms.scss
+    │       │   │       │   │   ├── _dropdown.scss
+    │       │   │       │   │   ├── _forms.scss
+    │       │   │       │   │   ├── _functions.scss
+    │       │   │       │   │   ├── _grid.scss
+    │       │   │       │   │   ├── _images.scss
+    │       │   │       │   │   ├── _input-group.scss
+    │       │   │       │   │   ├── _jumbotron.scss
+    │       │   │       │   │   ├── _list-group.scss
+    │       │   │       │   │   ├── _media.scss
+    │       │   │       │   │   ├── mixins
+    │       │   │       │   │   │   ├── _alert.scss
+    │       │   │       │   │   │   ├── _background-variant.scss
+    │       │   │       │   │   │   ├── _badge.scss
+    │       │   │       │   │   │   ├── _border-radius.scss
+    │       │   │       │   │   │   ├── _box-shadow.scss
+    │       │   │       │   │   │   ├── _breakpoints.scss
+    │       │   │       │   │   │   ├── _buttons.scss
+    │       │   │       │   │   │   ├── _caret.scss
+    │       │   │       │   │   │   ├── _clearfix.scss
+    │       │   │       │   │   │   ├── _deprecate.scss
+    │       │   │       │   │   │   ├── _float.scss
+    │       │   │       │   │   │   ├── _forms.scss
+    │       │   │       │   │   │   ├── _gradients.scss
+    │       │   │       │   │   │   ├── _grid-framework.scss
+    │       │   │       │   │   │   ├── _grid.scss
+    │       │   │       │   │   │   ├── _hover.scss
+    │       │   │       │   │   │   ├── _image.scss
+    │       │   │       │   │   │   ├── _list-group.scss
+    │       │   │       │   │   │   ├── _lists.scss
+    │       │   │       │   │   │   ├── _nav-divider.scss
+    │       │   │       │   │   │   ├── _pagination.scss
+    │       │   │       │   │   │   ├── _reset-text.scss
+    │       │   │       │   │   │   ├── _resize.scss
+    │       │   │       │   │   │   ├── _screen-reader.scss
+    │       │   │       │   │   │   ├── _size.scss
+    │       │   │       │   │   │   ├── _table-row.scss
+    │       │   │       │   │   │   ├── _text-emphasis.scss
+    │       │   │       │   │   │   ├── _text-hide.scss
+    │       │   │       │   │   │   ├── _text-truncate.scss
+    │       │   │       │   │   │   ├── _transition.scss
+    │       │   │       │   │   │   └── _visibility.scss
+    │       │   │       │   │   ├── _mixins.scss
+    │       │   │       │   │   ├── _modal.scss
+    │       │   │       │   │   ├── _navbar.scss
+    │       │   │       │   │   ├── _nav.scss
+    │       │   │       │   │   ├── _pagination.scss
+    │       │   │       │   │   ├── _popover.scss
+    │       │   │       │   │   ├── _print.scss
+    │       │   │       │   │   ├── _progress.scss
+    │       │   │       │   │   ├── _reboot.scss
+    │       │   │       │   │   ├── _root.scss
+    │       │   │       │   │   ├── _spinners.scss
+    │       │   │       │   │   ├── _tables.scss
+    │       │   │       │   │   ├── _toasts.scss
+    │       │   │       │   │   ├── _tooltip.scss
+    │       │   │       │   │   ├── _transitions.scss
+    │       │   │       │   │   ├── _type.scss
+    │       │   │       │   │   ├── utilities
+    │       │   │       │   │   │   ├── _align.scss
+    │       │   │       │   │   │   ├── _background.scss
+    │       │   │       │   │   │   ├── _borders.scss
+    │       │   │       │   │   │   ├── _clearfix.scss
+    │       │   │       │   │   │   ├── _display.scss
+    │       │   │       │   │   │   ├── _embed.scss
+    │       │   │       │   │   │   ├── _flex.scss
+    │       │   │       │   │   │   ├── _float.scss
+    │       │   │       │   │   │   ├── _overflow.scss
+    │       │   │       │   │   │   ├── _position.scss
+    │       │   │       │   │   │   ├── _screenreaders.scss
+    │       │   │       │   │   │   ├── _shadows.scss
+    │       │   │       │   │   │   ├── _sizing.scss
+    │       │   │       │   │   │   ├── _spacing.scss
+    │       │   │       │   │   │   ├── _stretched-link.scss
+    │       │   │       │   │   │   ├── _text.scss
+    │       │   │       │   │   │   └── _visibility.scss
+    │       │   │       │   │   ├── _utilities.scss
+    │       │   │       │   │   ├── _variables.scss
+    │       │   │       │   │   └── vendor
+    │       │   │       │   │       └── _rfs.scss
+    │       │   │       │   ├── _buttons.scss
+    │       │   │       │   ├── custom
+    │       │   │       │   │   ├── _alerts.scss
+    │       │   │       │   │   ├── _buttons.scss
+    │       │   │       │   │   ├── cards
+    │       │   │       │   │   │   ├── _card-chart.scss
+    │       │   │       │   │   │   ├── _card-map.scss
+    │       │   │       │   │   │   ├── _card-plain.scss
+    │       │   │       │   │   │   ├── _card-task.scss
+    │       │   │       │   │   │   └── _card-user.scss
+    │       │   │       │   │   ├── _card.scss
+    │       │   │       │   │   ├── _checkboxes-radio.scss
+    │       │   │       │   │   ├── _dropdown.scss
+    │       │   │       │   │   ├── _example-pages.scss
+    │       │   │       │   │   ├── _fixed-plugin.scss
+    │       │   │       │   │   ├── _footer.scss
+    │       │   │       │   │   ├── _forms.scss
+    │       │   │       │   │   ├── _functions.scss
+    │       │   │       │   │   ├── _images.scss
+    │       │   │       │   │   ├── _input-group.scss
+    │       │   │       │   │   ├── _misc.scss
+    │       │   │       │   │   ├── mixins
+    │       │   │       │   │   │   ├── _alert.scss
+    │       │   │       │   │   │   ├── _background-variant.scss
+    │       │   │       │   │   │   ├── _badges.scss
+    │       │   │       │   │   │   ├── _buttons.scss
+    │       │   │       │   │   │   ├── _dropdown.scss
+    │       │   │       │   │   │   ├── _forms.scss
+    │       │   │       │   │   │   ├── _icon.scss
+    │       │   │       │   │   │   ├── _inputs.scss
+    │       │   │       │   │   │   ├── _modals.scss
+    │       │   │       │   │   │   ├── opacity.scss
+    │       │   │       │   │   │   ├── _page-header.scss
+    │       │   │       │   │   │   ├── _popovers.scss
+    │       │   │       │   │   │   ├── _vendor-prefixes.scss
+    │       │   │       │   │   │   └── _wizard.scss
+    │       │   │       │   │   ├── _mixins.scss
+    │       │   │       │   │   ├── _modal.scss
+    │       │   │       │   │   ├── _navbar.scss
+    │       │   │       │   │   ├── _rtl.scss
+    │       │   │       │   │   ├── _sidebar-and-main-panel.scss
+    │       │   │       │   │   ├── _tables.scss
+    │       │   │       │   │   ├── _type.scss
+    │       │   │       │   │   ├── utilities
+    │       │   │       │   │   │   ├── _backgrounds.scss
+    │       │   │       │   │   │   ├── _floating.scss
+    │       │   │       │   │   │   ├── _helper.scss
+    │       │   │       │   │   │   ├── _position.scss
+    │       │   │       │   │   │   ├── _shadows.scss
+    │       │   │       │   │   │   ├── _sizing.scss
+    │       │   │       │   │   │   ├── _spacing.scss
+    │       │   │       │   │   │   ├── _text.scss
+    │       │   │       │   │   │   └── _transform.scss
+    │       │   │       │   │   ├── _utilities.scss
+    │       │   │       │   │   ├── _variables.scss
+    │       │   │       │   │   ├── vendor
+    │       │   │       │   │   │   ├── _plugin-animate-bootstrap-notify.scss
+    │       │   │       │   │   │   └── _plugin-perfect-scrollbar.scss
+    │       │   │       │   │   └── _white-content.scss
+    │       │   │       │   ├── plugins
+    │       │   │       │   │   └── _plugin-perfect-scrollbar.scss
+    │       │   │       │   └── _typography.scss
+    │       │   │       └── black-dashboard.scss
+    │       │   ├── bootstrap-4.1.2
+    │       │   │   ├── bootstrap.min.css
+    │       │   │   ├── bootstrap.min.js
+    │       │   │   └── popper.js
+    │       │   ├── images
+    │       │   │   ├── 122.jpg
+    │       │   │   ├── 123.jpg
+    │       │   │   ├── 124.jpg
+    │       │   │   ├── 125.jpg
+    │       │   │   ├── 126.jpg
+    │       │   │   ├── 12.jpg
+    │       │   │   ├── 13.gif
+    │       │   │   ├── 15.png
+    │       │   │   ├── 1.jpg
+    │       │   │   ├── 2.jpg
+    │       │   │   ├── 34.jpg
+    │       │   │   ├── 3.jpg
+    │       │   │   ├── 3.PNG
+    │       │   │   ├── 4.jpg
+    │       │   │   ├── 5.jpg
+    │       │   │   ├── 6640bb42-c751-4298-a173-e64a863828ff.jpg
+    │       │   │   ├── 8.jpg
+    │       │   │   ├── acad5.png
+    │       │   │   ├── Add-Formula-Query-Custom-Column.png
+    │       │   │   ├── africa-fashion-week.jpg
+    │       │   │   ├── android-phone-logo-50-px.png
+    │       │   │   ├── android-tablet-logo-50-px.png
+    │       │   │   ├── apowerbi.png
+    │       │   │   ├── appv.png
+    │       │   │   ├── Between delimiters.PNG
+    │       │   │   ├── bg1.jpg
+    │       │   │   ├── bg2.jpg
+    │       │   │   ├── bg3.jpg
+    │       │   │   ├── bg4.jpg
+    │       │   │   ├── box_1_img.jpg
+    │       │   │   ├── box_1.jpg
+    │       │   │   ├── box_2_img.jpg
+    │       │   │   ├── box_2.jpg
+    │       │   │   ├── box_3_img.jpg
+    │       │   │   ├── box_3.jpg
+    │       │   │   ├── boxes_1.png
+    │       │   │   ├── boxes_2.png
+    │       │   │   ├── briefcase.svg
+    │       │   │   ├── c1.jpg
+    │       │   │   ├── cart_2.svg
+    │       │   │   ├── cart_3.xml
+    │       │   │   ├── cart_item_1.jpg
+    │       │   │   ├── cart.svg
+    │       │   │   ├── clothing-store-984396_1920.jpg
+    │       │   │   ├── combine.jpg
+    │       │   │   ├── create1.png
+    │       │   │   ├── data-sources-01.png
+    │       │   │   ├── data-sources-02.png
+    │       │   │   ├── data-sources-03.png
+    │       │   │   ├── data-sources-04.png
+    │       │   │   ├── data-sources-05.png
+    │       │   │   ├── data-sources-06.png
+    │       │   │   ├── data-sources-07.png
+    │       │   │   ├── data-sources-08.png
+    │       │   │   ├── datasources-fromnavigatordialog.png
+    │       │   │   ├── datasources-fromwebbox.png
+    │       │   │   ├── dept.svg
+    │       │   │   ├── designer_gsg_startsplashscreen.png
+    │       │   │   ├── designer_gsg_usstateabbreviationsnavigator2.png
+    │       │   │   ├── documents.svg
+    │       │   │   ├── down.png
+    │       │   │   ├── f4f8b9f4-ae66-4a28-81bc-f00b1a71ef4d.jpg
+    │       │   │   ├── fashion-3080644_1920.jpg
+    │       │   │   ├── fashion-week-main.jpg
+    │       │   │   ├── favicon.ico
+    │       │   │   ├── files1.jpg
+    │       │   │   ├── files2.png
+    │       │   │   ├── forny
+    │       │   │   │   ├── 13.png
+    │       │   │   │   ├── 14.png
+    │       │   │   │   ├── 17.jpg
+    │       │   │   │   ├── 18.jpg
+    │       │   │   │   ├── 19.jpg
+    │       │   │   │   ├── 20.jpg
+    │       │   │   │   ├── bx-data.svg
+    │       │   │   │   ├── bx-mail-send.svg
+    │       │   │   │   ├── bxs-bar-chart-alt-2.svg
+    │       │   │   │   ├── bxs-dashboard.svg
+    │       │   │   │   ├── bx-search-alt.svg
+    │       │   │   │   ├── bxs-user.svg
+    │       │   │   │   ├── bx-user-circle.svg
+    │       │   │   │   ├── bx-user.svg
+    │       │   │   │   ├── l2.jpg
+    │       │   │   │   ├── l3.jpg
+    │       │   │   │   ├── l4.jpg
+    │       │   │   │   ├── l5.jpg
+    │       │   │   │   ├── menu-alt-left-regular-24.png
+    │       │   │   │   ├── NIGERIA-1.jpg
+    │       │   │   │   └── small-logo.png
+    │       │   │   ├── frame.png
+    │       │   │   ├── grade.svg
+    │       │   │   ├── guide5.png
+    │       │   │   ├── heart_2.svg
+    │       │   │   ├── heart.svg
+    │       │   │   ├── home_1.jpg
+    │       │   │   ├── home22.jpg
+    │       │   │   ├── home23.jpg
+    │       │   │   ├── home_2.jpg
+    │       │   │   ├── home31.jpg
+    │       │   │   ├── home_3.jpg
+    │       │   │   ├── home3.jpg
+    │       │   │   ├── home.jpg
+    │       │   │   ├── hqdefault.jpg
+    │       │   │   ├── icon_1.svg
+    │       │   │   ├── icon_2.svg
+    │       │   │   ├── icon_3.svg
+    │       │   │   ├── iconfinder_status_46254.png
+    │       │   │   ├── iconslee1.jpg
+    │       │   │   ├── iconslee1.png
+    │       │   │   ├── iconslee2.jpg
+    │       │   │   ├── iconslee2.png
+    │       │   │   ├── iconslee3.jpg
+    │       │   │   ├── iconslee4.jpg
+    │       │   │   ├── image005.jpg
+    │       │   │   ├── image_thumb-55.png
+    │       │   │   ├── image_thumb-56.png
+    │       │   │   ├── ipad-logo-50-px.png
+    │       │   │   ├── iphone-logo-50-px.png
+    │       │   │   ├── lang.svg
+    │       │   │   ├── lit-07.png
+    │       │   │   ├── logo_1.png
+    │       │   │   ├── logo_2.png
+    │       │   │   ├── logo.jfif
+    │       │   │   ├── logouba.jpg
+    │       │   │   ├── ments1.jpg
+    │       │   │   ├── me-pivot-columns-aggregations.png
+    │       │   │   ├── me-pivot-columns-basic-menu.png
+    │       │   │   ├── me-pivot-columns-da-pivot-icon.png
+    │       │   │   ├── me-pivot-columns-final-table.png
+    │       │   │   ├── me-pivot-columns-icon.png
+    │       │   │   ├── me-pivot-columns-no-aggregation-final.png
+    │       │   │   ├── me-pivot-columns-no-aggregation.png
+    │       │   │   ├── me-pivot-columns-original-table.png
+    │       │   │   ├── me-pivot-dont-aggregate-valid-initial.png
+    │       │   │   ├── mm10.png
+    │       │   │   ├── mm12.png
+    │       │   │   ├── mm13.png
+    │       │   │   ├── mm14.png
+    │       │   │   ├── mm15.png
+    │       │   │   ├── mm16.png
+    │       │   │   ├── mm17.png
+    │       │   │   ├── mm1.png
+    │       │   │   ├── mm2.png
+    │       │   │   ├── mm3.png
+    │       │   │   ├── mm4.png
+    │       │   │   ├── mm5.png
+    │       │   │   ├── mm6.png
+    │       │   │   ├── mm7.png
+    │       │   │   ├── mm8.png
+    │       │   │   ├── mm9.png
+    │       │   │   ├── mobile-apps-app-store.png
+    │       │   │   ├── mobile-apps-google-play.png
+    │       │   │   ├── mobile-apps-windows-store.png
+    │       │   │   ├── mspb1.png
+    │       │   │   ├── mspbsignup2.png
+    │       │   │   ├── mspbsignup.png
+    │       │   │   ├── onboarding-icons-05_2x.png
+    │       │   │   ├── p1.jpg
+    │       │   │   ├── pbid-dataset-impact-analysis-desktop-warning.png
+    │       │   │   ├── pbid_publish_publishbutton.png
+    │       │   │   ├── pbid_publish_select_destination.png
+    │       │   │   ├── pbid_publish_success.png
+    │       │   │   ├── PBI_Extract_String.jpg
+    │       │   │   ├── pbi_latitude.png
+    │       │   │   ├── pending.jpg
+    │       │   │   ├── phone_home.png
+    │       │   │   ├── phone.svg
+    │       │   │   ├── pivot-operation-diagram.png
+    │       │   │   ├── plan5.png
+    │       │   │   ├── plan.jpg
+    │       │   │   ├── power-bi-1.jpg
+    │       │   │   ├── power-bi-android-quickstart-annotate.png
+    │       │   │   ├── power-bi-android-quickstart-cross-highlight.png
+    │       │   │   ├── power-bi-android-quickstart-dashboard.png
+    │       │   │   ├── power-bi-android-quickstart-report-icon.png
+    │       │   │   ├── power-bi-android-quickstart-report.png
+    │       │   │   ├── power-bi-android-quickstart-send-snapshot.png
+    │       │   │   ├── power-bi-android-quickstart-tap-pencil2.png
+    │       │   │   ├── power-bi-android-quickstart-tap-pencil.png
+    │       │   │   ├── power-bi-android-quickstart-tap-tile-fave.png
+    │       │   │   ├── power-bi-android-quickstart-tile-focus.png
+    │       │   │   ├── power-bi-app-workspace.png
+    │       │   │   ├── power-bi-august-update-blog_1536648304_1006221178.png
+    │       │   │   ├── power-bi-column-chart.png
+    │       │   │   ├── power-bi-convert.png
+    │       │   │   ├── power-bi-create-visual.png
+    │       │   │   ├── power-bi-dash.png
+    │       │   │   ├── power-bi-delete.png
+    │       │   │   ├── powerbiDSKT1.png
+    │       │   │   ├── power-bi-explore.png
+    │       │   │   ├── power-bi-favorites-flyout.png
+    │       │   │   ├── power-bi-filled-map.png
+    │       │   │   ├── power-bi-flyout-recent.png
+    │       │   │   ├── power-bi-home-oldest.png
+    │       │   │   ├── power-bi-home-steps.png
+    │       │   │   ├── power-bi-hover.png
+    │       │   │   ├── power-bi-icons.png
+    │       │   │   ├── power-bi-iphone-workspaces-button.png
+    │       │   │   ├── power-bi-maps.png
+    │       │   │   ├── powerbimobile.jpg
+    │       │   │   ├── power-bi-product.png
+    │       │   │   ├── power-bi-report-view.png
+    │       │   │   ├── power-bi-sample-app.png
+    │       │   │   ├── power-bi-search-field.png
+    │       │   │   ├── power-bi-search-icon.png
+    │       │   │   ├── power-bi-select-favorite.png
+    │       │   │   ├── power-bi-sent-to-bing-new.png
+    │       │   │   ├── power-bi-sort-icon.png
+    │       │   │   ├── power-bi-sort.png
+    │       │   │   ├── power-bi-unfavorite.png
+    │       │   │   ├── power-bi-workspace-app.png
+    │       │   │   ├── power-bi-workspaces.png
+    │       │   │   ├── power-bi-yellow-tab.png
+    │       │   │   ├── product
+    │       │   │   │   ├── 2b.png
+    │       │   │   │   ├── 4-1.jpg
+    │       │   │   │   ├── blouse2.jfif
+    │       │   │   │   ├── blouse3.jfif
+    │       │   │   │   ├── blouse4.jfif
+    │       │   │   │   ├── blouse5.jfif
+    │       │   │   │   ├── blouse6.jpeg
+    │       │   │   │   ├── blouse.jfif
+    │       │   │   │   ├── casual-shirt1.jpg
+    │       │   │   │   ├── couple.jpg
+    │       │   │   │   ├── English_wears
+    │       │   │   │   │   ├── few1.jpg
+    │       │   │   │   │   ├── HTB1Bbe0lY3nBKNjSZFMq6yUSFXaP.webp
+    │       │   │   │   │   ├── mew1.jpg
+    │       │   │   │   │   ├── mew2.jpg
+    │       │   │   │   │   ├── mew3.jpg
+    │       │   │   │   │   ├── mew4.jpg
+    │       │   │   │   │   ├── mew5.jpg
+    │       │   │   │   │   └── mew6.jpg
+    │       │   │   │   ├── freestylemale.jpg
+    │       │   │   │   ├── Freestyle_wears
+    │       │   │   │   │   ├── 2018-latest-coat-pant-designs-casual-grey-men-suits-for-wedding-business-street-elegant-simple-men.webp
+    │       │   │   │   │   ├── 2b.png
+    │       │   │   │   │   ├── British-Style-Dress-Suit-Pant-Man-2019-New-Plaid-Suit-Pant-Men-Brand-Designer-Gentlemen-Business.webp
+    │       │   │   │   │   ├── ffw1.jpg
+    │       │   │   │   │   ├── mfw10.jpg
+    │       │   │   │   │   ├── mfw11.jpg
+    │       │   │   │   │   ├── mfw1.jpg
+    │       │   │   │   │   ├── mfw2.jpg
+    │       │   │   │   │   ├── mfw3.jpg
+    │       │   │   │   │   ├── mfw4.jpg
+    │       │   │   │   │   ├── mfw5.jpg
+    │       │   │   │   │   ├── mfw6.jpg
+    │       │   │   │   │   ├── mfw7.jpg
+    │       │   │   │   │   ├── mfw8.jpg
+    │       │   │   │   │   └── mfw9.jpg
+    │       │   │   │   ├── kids.jpg
+    │       │   │   │   ├── man.jpg
+    │       │   │   │   ├── nativewear.jpg
+    │       │   │   │   ├── Native_wears
+    │       │   │   │   │   ├── fna1.jpg
+    │       │   │   │   │   ├── fna2.jpg
+    │       │   │   │   │   ├── mna10.jpg
+    │       │   │   │   │   ├── mna11.jpg
+    │       │   │   │   │   ├── mna12.jpg
+    │       │   │   │   │   ├── mna13.jpg
+    │       │   │   │   │   ├── mna1.jpg
+    │       │   │   │   │   ├── mna2.jpg
+    │       │   │   │   │   ├── mna3.jpg
+    │       │   │   │   │   ├── mna4.jpg
+    │       │   │   │   │   ├── mna5.jpg
+    │       │   │   │   │   ├── mna6.jpg
+    │       │   │   │   │   ├── mna7.jpg
+    │       │   │   │   │   ├── mna8.jpg
+    │       │   │   │   │   ├── mna9.jpg
+    │       │   │   │   │   └── mna.webp
+    │       │   │   │   ├── necklace1.jfif
+    │       │   │   │   ├── necklace2.jfif
+    │       │   │   │   ├── shirt3.jpg
+    │       │   │   │   ├── shirt4.jfif
+    │       │   │   │   ├── shirt5.jfif
+    │       │   │   │   ├── shirt6.jfif
+    │       │   │   │   ├── shirt7.jfif
+    │       │   │   │   ├── shoe1.jfif
+    │       │   │   │   ├── shoe2.jfif
+    │       │   │   │   ├── shoe3.jfif
+    │       │   │   │   ├── shoee2.jfif
+    │       │   │   │   ├── simplemale.jpg
+    │       │   │   │   ├── Simple_wears
+    │       │   │   │   │   ├── blouse.jfif
+    │       │   │   │   │   ├── fsi1.jpg
+    │       │   │   │   │   ├── msi1.jpg
+    │       │   │   │   │   ├── msi2.jpg
+    │       │   │   │   │   ├── msi3.png
+    │       │   │   │   │   ├── msi4.jpg
+    │       │   │   │   │   ├── msi5.jpg
+    │       │   │   │   │   ├── msi6.jpg
+    │       │   │   │   │   └── msi.png
+    │       │   │   │   ├── suits.jpg
+    │       │   │   │   ├── Suits_wears
+    │       │   │   │   │   ├── fsu1.jpg
+    │       │   │   │   │   ├── msu1.jpg
+    │       │   │   │   │   ├── msu2.jpg
+    │       │   │   │   │   ├── msu3.jpg
+    │       │   │   │   │   ├── msu4.jpg
+    │       │   │   │   │   ├── msu5.jpg
+    │       │   │   │   │   ├── msu6.jpg
+    │       │   │   │   │   ├── msu7.jpg
+    │       │   │   │   │   └── msu.webp
+    │       │   │   │   ├── tr1.jfif
+    │       │   │   │   ├── tr2.jfif
+    │       │   │   │   ├── tr3.jfif
+    │       │   │   │   ├── tr4.jfif
+    │       │   │   │   ├── Traditional_wears
+    │       │   │   │   │   ├── ankara-styles-amillionstyles.jpg
+    │       │   │   │   │   ├── ft1.jpg
+    │       │   │   │   │   ├── ft2.jpg
+    │       │   │   │   │   ├── ft3.jpg
+    │       │   │   │   │   ├── ft4.jpg
+    │       │   │   │   │   ├── mt10.jpg
+    │       │   │   │   │   ├── mt11.jpg
+    │       │   │   │   │   ├── mt12.jpg
+    │       │   │   │   │   ├── mt13.jpg
+    │       │   │   │   │   ├── mt1.jpg
+    │       │   │   │   │   ├── mt2.jpg
+    │       │   │   │   │   ├── mt3.jpg
+    │       │   │   │   │   ├── mt4.jpg
+    │       │   │   │   │   ├── mt5.jpg
+    │       │   │   │   │   ├── mt6.jpg
+    │       │   │   │   │   ├── mt7.jpg
+    │       │   │   │   │   ├── mt8.jpg
+    │       │   │   │   │   └── mt9.jpg
+    │       │   │   │   └── women.jpg
+    │       │   │   ├── product_1.jpg
+    │       │   │   ├── product_2.jpg
+    │       │   │   ├── product_3.jpg
+    │       │   │   ├── product_4.jpg
+    │       │   │   ├── product_5.jpg
+    │       │   │   ├── product_6.jpg
+    │       │   │   ├── product_7.jpg
+    │       │   │   ├── product_8.jpg
+    │       │   │   ├── product_9.jpg
+    │       │   │   ├── product_image_1.jpg
+    │       │   │   ├── queryoverview_addcolumnribbon.png
+    │       │   │   ├── queryoverview_blankpane.png
+    │       │   │   ├── queryoverview_closenload.png
+    │       │   │   ├── queryoverview_loading.png
+    │       │   │   ├── query-overview-new-source-menu.png
+    │       │   │   ├── queryoverview_querysettingspane.png
+    │       │   │   ├── queryoverview_querysettings_rename.png
+    │       │   │   ├── queryoverview_ribbon.png
+    │       │   │   ├── queryoverview_savework.png
+    │       │   │   ├── queryoverview_thecenterpane.png
+    │       │   │   ├── queryoverview_theleftpane.png
+    │       │   │   ├── queryoverview_transformribbon.png
+    │       │   │   ├── queryoverview_viewicons.png
+    │       │   │   ├── queryoverview_viewribbon.png
+    │       │   │   ├── queryoverview_withdataconnection.png
+    │       │   │   ├── screen1.jpg
+    │       │   │   ├── screen2.jpg
+    │       │   │   ├── screen3.jpg
+    │       │   │   ├── search.png
+    │       │   │   ├── select.png
+    │       │   │   ├── shapecombine_closeandapply.png
+    │       │   │   ├── shapecombine_error2.png
+    │       │   │   ├── shapecombine_errorinfo2.png
+    │       │   │   ├── shapecombine_filterdc.png
+    │       │   │   ├── shapecombine_formulabar.png
+    │       │   │   ├── shapecombine_merge2.png
+    │       │   │   ├── shapecombine_mergeexpand.png
+    │       │   │   ├── shapecombine_mergenewcolumn.png
+    │       │   │   ├── shapecombine_mergequeries.png
+    │       │   │   ├── shapecombine_movestep.png
+    │       │   │   ├── shapecombine_removebottomrows.png
+    │       │   │   ├── shapecombine_removecolumnscostofliving.png
+    │       │   │   ├── shapecombine_removecolumns.png
+    │       │   │   ├── shapecombine_removetoprows.png
+    │       │   │   ├── shapecombine_rename.png
+    │       │   │   ├── shapecombine_replacevalues2.png
+    │       │   │   ├── sld1.jpg
+    │       │   │   ├── SPLIT-COLUMN-BY-NUMBER-OF-CHARECTERS.png
+    │       │   │   ├── successicon.jpg
+    │       │   │   ├── t1.jpg
+    │       │   │   ├── t2.jpg
+    │       │   │   ├── t3.png
+    │       │   │   ├── t4.jpg
+    │       │   │   ├── t6.jpg
+    │       │   │   ├── t7.jpg
+    │       │   │   ├── t8.jpg
+    │       │   │   ├── t9.png
+    │       │   │   ├── UBA.png
+    │       │   │   ├── Unpivot-Column-in-PowerBI-Featured-Image-1024x512.jpg
+    │       │   │   ├── usericon.png
+    │       │   │   ├── user.svg
+    │       │   │   ├── view_1.png
+    │       │   │   ├── view_2.png
+    │       │   │   ├── view_3.png
+    │       │   │   ├── win-10-logo-50-px.png
+    │       │   │   └── years.svg
+    │       │   ├── js
+    │       │   │   ├── ace-responsive-menu.js
+    │       │   │   ├── active.js
+    │       │   │   ├── am-chart.js
+    │       │   │   ├── ammap.min.js
+    │       │   │   ├── apexchart.min.js
+    │       │   │   ├── bootstrap.bundle.js
+    │       │   │   ├── bootstrap.bundle.js.map
+    │       │   │   ├── bootstrap.bundle.min.js
+    │       │   │   ├── bootstrap.bundle.min.js.map
+    │       │   │   ├── bootstrap.js
+    │       │   │   ├── bootstrap.js.map
+    │       │   │   ├── bootstrap.min.js
+    │       │   │   ├── bootstrap.min.js.map
+    │       │   │   ├── bootstrap-select.min.js
+    │       │   │   ├── bundle.js
+    │       │   │   ├── cart.js
+    │       │   │   ├── category.js
+    │       │   │   ├── cbpFWTabs.js
+    │       │   │   ├── checkout.js
+    │       │   │   ├── circle-progress.js
+    │       │   │   ├── cocoon.preprocess.js
+    │       │   │   ├── custom.js
+    │       │   │   ├── dashboard-active.js
+    │       │   │   ├── demo.js
+    │       │   │   ├── fullscreen.js
+    │       │   │   ├── gauge.js
+    │       │   │   ├── isotop.js
+    │       │   │   ├── javascript-static.js
+    │       │   │   ├── jquery-3.2.1.min.js
+    │       │   │   ├── jquery-3.3.1.js
+    │       │   │   ├── jquery.countdown.js
+    │       │   │   ├── jquery.counterup.js
+    │       │   │   ├── jquery.dataTables.min.js
+    │       │   │   ├── jquery.easings.min.js
+    │       │   │   ├── jquery.fullPage.js
+    │       │   │   ├── jquery-migrate-3.0.0.min.js
+    │       │   │   ├── jquery.min.js
+    │       │   │   ├── jquery.mmenu.all.js
+    │       │   │   ├── jquery-scrolltofixed-min.js
+    │       │   │   ├── jquery.sidr.min.js
+    │       │   │   ├── jquery-ui.min.js
+    │       │   │   ├── light.js
+    │       │   │   ├── main.js
+    │       │   │   ├── parallax.js
+    │       │   │   ├── plugins.min.js
+    │       │   │   ├── popper.min.js
+    │       │   │   ├── product.js
+    │       │   │   ├── progressbar.js
+    │       │   │   ├── radar.js
+    │       │   │   ├── require.min.js
+    │       │   │   ├── script.js
+    │       │   │   ├── scripts.js
+    │       │   │   ├── scrollto.js
+    │       │   │   ├── serial.js
+    │       │   │   ├── setting.js
+    │       │   │   ├── simplebar.js
+    │       │   │   ├── slider.js
+    │       │   │   ├── snackbar.min.js
+    │       │   │   ├── timepicker.js
+    │       │   │   ├── widget-page-chart-active.js
+    │       │   │   ├── worldlow.js
+    │       │   │   ├── wow.min.js
+    │       │   │   └── yui-moodlesimple.js
+    │       │   ├── navbar.css
+    │       │   ├── plugins
+    │       │   │   ├── easing
+    │       │   │   │   └── easing.js
+    │       │   │   ├── flexslider
+    │       │   │   │   ├── flexslider.css
+    │       │   │   │   ├── fonts
+    │       │   │   │   │   ├── flexslider-icon.ttf
+    │       │   │   │   │   └── flexslider-icon.woff
+    │       │   │   │   └── jquery.flexslider-min.js
+    │       │   │   ├── font-awesome-4.7.0
+    │       │   │   │   ├── css
+    │       │   │   │   │   ├── font-awesome.css
+    │       │   │   │   │   └── font-awesome.min.css
+    │       │   │   │   ├── fonts
+    │       │   │   │   │   ├── FontAwesome.otf
+    │       │   │   │   │   ├── fontawesome-webfont.eot
+    │       │   │   │   │   ├── fontawesome-webfont.svg
+    │       │   │   │   │   ├── fontawesome-webfont.ttf
+    │       │   │   │   │   ├── fontawesome-webfont.woff
+    │       │   │   │   │   └── fontawesome-webfont.woff2
+    │       │   │   │   ├── HELP-US-OUT.txt
+    │       │   │   │   ├── less
+    │       │   │   │   │   ├── animated.less
+    │       │   │   │   │   ├── bordered-pulled.less
+    │       │   │   │   │   ├── core.less
+    │       │   │   │   │   ├── fixed-width.less
+    │       │   │   │   │   ├── font-awesome.less
+    │       │   │   │   │   ├── icons.less
+    │       │   │   │   │   ├── larger.less
+    │       │   │   │   │   ├── list.less
+    │       │   │   │   │   ├── mixins.less
+    │       │   │   │   │   ├── path.less
+    │       │   │   │   │   ├── rotated-flipped.less
+    │       │   │   │   │   ├── screen-reader.less
+    │       │   │   │   │   ├── stacked.less
+    │       │   │   │   │   └── variables.less
+    │       │   │   │   └── scss
+    │       │   │   │       ├── _animated.scss
+    │       │   │   │       ├── _bordered-pulled.scss
+    │       │   │   │       ├── _core.scss
+    │       │   │   │       ├── _fixed-width.scss
+    │       │   │   │       ├── font-awesome.scss
+    │       │   │   │       ├── _icons.scss
+    │       │   │   │       ├── _larger.scss
+    │       │   │   │       ├── _list.scss
+    │       │   │   │       ├── _mixins.scss
+    │       │   │   │       ├── _path.scss
+    │       │   │   │       ├── _rotated-flipped.scss
+    │       │   │   │       ├── _screen-reader.scss
+    │       │   │   │       ├── _stacked.scss
+    │       │   │   │       └── _variables.scss
+    │       │   │   ├── greensock
+    │       │   │   │   ├── animation.gsap.min.js
+    │       │   │   │   ├── ScrollToPlugin.min.js
+    │       │   │   │   ├── TimelineMax.min.js
+    │       │   │   │   └── TweenMax.min.js
+    │       │   │   ├── Isotope
+    │       │   │   │   ├── fitcolumns.js
+    │       │   │   │   └── isotope.pkgd.min.js
+    │       │   │   ├── OwlCarousel2-2.2.1
+    │       │   │   │   ├── ajax-loader.gif
+    │       │   │   │   ├── animate.css
+    │       │   │   │   ├── owl.carousel.css
+    │       │   │   │   ├── owl.carousel.js
+    │       │   │   │   ├── owl.theme.default.css
+    │       │   │   │   └── owl.video.play.png
+    │       │   │   ├── parallax-js-master
+    │       │   │   │   └── parallax.min.js
+    │       │   │   ├── progressbar
+    │       │   │   │   └── progressbar.min.js
+    │       │   │   └── scrollmagic
+    │       │   │       └── ScrollMagic.min.js
+    │       │   └── styles
+    │       │       ├── cart.css
+    │       │       ├── cart_responsive.css
+    │       │       ├── category.css
+    │       │       ├── category_responsive.css
+    │       │       ├── checkout.css
+    │       │       ├── checkout_responsive.css
+    │       │       ├── glyphicon.css
+    │       │       ├── icon.css
+    │       │       ├── main_styles.css
+    │       │       ├── product.css
+    │       │       ├── product_responsive.css
+    │       │       └── responsive.css
+    │       ├── templates
+    │       │   ├── 1mspowerbi.html
+    │       │   ├── 404.html
+    │       │   ├── courses.html
+    │       │   ├── enroll.html
+    │       │   ├── index.html
+    │       │   ├── jsp
+    │       │   │   ├── login.jsp
+    │       │   │   ├── registration.jsp
+    │       │   │   └── welcome.jsp
+    │       │   ├── landingpage.html
+    │       │   ├── layouts
+    │       │   │   ├── aside-layout.html
+    │       │   │   ├── default-layout.html
+    │       │   │   ├── footer-layout.html
+    │       │   │   ├── header-layout.html
+    │       │   │   ├── head-layout.html
+    │       │   │   ├── menu-layout.html
+    │       │   │   └── sidebar-layout.html
+    │       │   ├── login.html
+    │       │   ├── mspowerbi
+    │       │   │   ├── combinedatapowerbia.html
+    │       │   │   ├── createpowerbia.html
+    │       │   │   ├── Extractcharpowerbia.html
+    │       │   │   ├── getdatapowerbia.html
+    │       │   │   ├── mobilepowerbia.html
+    │       │   │   ├── Pivotdatapowerbia.html
+    │       │   │   ├── Powermappowerbia.html
+    │       │   │   ├── Powervisualpowerbia.html
+    │       │   │   ├── publishpowerbia.html
+    │       │   │   ├── queryeditorpowerbia.html
+    │       │   │   ├── Removecolpowerbia.html
+    │       │   │   ├── Replacedatapowerbia.html
+    │       │   │   ├── servicepowerbia.html
+    │       │   │   ├── Splitcolpowerbia.html
+    │       │   │   └── Trimdatapowerbia.html
+    │       │   ├── notifications.html
+    │       │   ├── oldlandingpage.html
+    │       │   ├── profiles.html
+    │       │   ├── register.html
+    │       │   ├── registration.html
+    │       │   ├── results.html
+    │       │   ├── Students.html
+    │       │   └── success.html
+    │       └── validation.properties
+    └── test
+        └── java
+            └── com
+                └── lit
+                    └── lms
+                        └── TaylorAppApplicationTests.java
+
+78 directories, 1000 files
