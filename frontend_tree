@@ -1,0 +1,294 @@
+./
+├── App.js
+├── assets
+│   ├── fonts
+│   │   ├── fa-brands-400.eot
+│   │   ├── fa-brands-400.svg
+│   │   ├── fa-brands-400.ttf
+│   │   ├── fa-brands-400.woff
+│   │   ├── fa-brands-400.woff2
+│   │   ├── fa-duotone-900.eot
+│   │   ├── fa-duotone-900.svg
+│   │   ├── fa-duotone-900.ttf
+│   │   ├── fa-duotone-900.woff
+│   │   ├── fa-duotone-900.woff2
+│   │   ├── fa-light-300.eot
+│   │   ├── fa-light-300.svg
+│   │   ├── fa-light-300.ttf
+│   │   ├── fa-light-300.woff
+│   │   ├── fa-light-300.woff2
+│   │   ├── fa-regular-400.eot
+│   │   ├── fa-regular-400.svg
+│   │   ├── fa-regular-400.ttf
+│   │   ├── fa-regular-400.woff
+│   │   ├── fa-regular-400.woff2
+│   │   ├── fa-solid-900.eot
+│   │   ├── fa-solid-900.svg
+│   │   ├── fa-solid-900.ttf
+│   │   ├── fa-solid-900.woff
+│   │   ├── fa-solid-900.woff2
+│   │   └── futura-medium.otf
+│   └── Lampnet_logo_no_text_180_180.png
+├── components
+│   ├── atoms
+│   │   ├── basic
+│   │   │   ├── AssignmentEditor.js
+│   │   │   ├── Batches.js
+│   │   │   ├── CheckBoxInput.js
+│   │   │   ├── CourseModuleEditor.js
+│   │   │   ├── DatePicker.js
+│   │   │   ├── Dropdown2.js
+│   │   │   ├── Dropdown.js
+│   │   │   ├── FileUploader.js
+│   │   │   ├── Image.js
+│   │   │   ├── ImageUploader.js
+│   │   │   ├── InlineInputWithButton.js
+│   │   │   ├── PasswordInput.js
+│   │   │   ├── PickerInput.js
+│   │   │   ├── QuizEditor.js
+│   │   │   ├── QuizEditorMethods.js
+│   │   │   ├── QuizInfoModal.js
+│   │   │   ├── Quiz.js
+│   │   │   ├── QuizMethods.js
+│   │   │   ├── QuizSubmitModal.js
+│   │   │   ├── RadioList.js
+│   │   │   ├── Rater2.js
+│   │   │   ├── Rater.js
+│   │   │   ├── SearchInput.js
+│   │   │   ├── ShareCourseModal.js
+│   │   │   ├── SpinnerButton.js
+│   │   │   ├── SvgBackground.js
+│   │   │   ├── TextAreaInput.js
+│   │   │   ├── TextInput.js
+│   │   │   └── TextInputNoLabel.js
+│   │   ├── Footer.js
+│   │   ├── Header.js
+│   │   ├── MobileNav.js
+│   │   └── ReviewsWidget.js
+│   ├── loaders
+│   │   ├── FailureDisplay.js
+│   │   ├── index.js
+│   │   ├── LoaderFront.js
+│   │   ├── LoadingDisplay.js
+│   │   └── ModuleLoader.js
+│   └── pages
+│       ├── AboutUs.js
+│       ├── AdminCreateCourse.js
+│       ├── AdminCreateDepartment.js
+│       ├── AdminEditCourse.js
+│       ├── AdminSearchCourse.js
+│       ├── AdminSearchDepartments.js
+│       ├── AdminSearchStudents.js
+│       ├── AdminSearchTeachers.js
+│       ├── AdminStudents.js
+│       ├── AllCourses.js
+│       ├── ContactUs.js
+│       ├── CoursePreview.js
+│       ├── CourseStudents.js
+│       ├── EditProfile.js
+│       ├── Faq.js
+│       ├── ForgotPassword.js
+│       ├── LandingPage.js
+│       ├── lit
+│       │   ├── CourseStudents.js
+│       │   ├── CreateCategory.js
+│       │   ├── CreateSubcategory.js
+│       │   ├── EditCategory.js
+│       │   ├── EditSubcategory.js
+│       │   ├── SearchCategories.js
+│       │   └── SearchSubcategories.js
+│       ├── Login.js
+│       ├── MyAssignments.js
+│       ├── MyCourseModule.js
+│       ├── MyCourses.js
+│       ├── NotFound.js
+│       ├── Notifications.js
+│       ├── Profile.js
+│       ├── Register.js
+│       ├── ResetPassword.js
+│       ├── Root.js
+│       ├── Routes.js
+│       ├── TeacherAssignments.js
+│       ├── TeacherCourse.js
+│       ├── TeacherCourses.js
+│       ├── TeacherCreateCourse.js
+│       ├── TeacherEditCourse.js
+│       ├── TeacherEditModule.js
+│       ├── TeacherEditProfile.js
+│       └── TeacherRegister.js
+├── constants
+│   ├── actions.js
+│   ├── countriesList.js
+│   ├── icons.js
+│   ├── initialState.js
+│   ├── misc.js
+│   └── navlinks.js
+├── css
+│   ├── app2.scss
+│   ├── app.scss
+│   ├── constants.scss
+│   ├── fontawesome.css
+│   ├── icomoon.css
+│   └── set-defaults.css
+├── css-dependencies
+│   ├── bootstrap.min.css
+│   ├── ck-editor.css
+│   ├── cocoon.css
+│   ├── croppie.scss
+│   ├── flatpickr.scss
+│   ├── fontawesome-animation-0.3.0.css
+│   └── fontawesome.min.css
+├── history.js
+├── index.js
+├── output7
+├── reducers
+│   ├── asyncTask.js
+│   ├── authInfo.js
+│   ├── buttons.js
+│   ├── index.js
+│   ├── misc.js
+│   ├── navigation.js
+│   ├── pagesData.js
+│   ├── userInfo.js
+│   └── userInput.js
+├── services
+│   ├── auth
+│   │   ├── editProfile.js
+│   │   ├── forgotPassword.js
+│   │   ├── initialization.js
+│   │   ├── resetPassword.js
+│   │   ├── signIn.js
+│   │   ├── signOut.js
+│   │   └── signUp.js
+│   ├── courses
+│   │   ├── adminCreateCourse.js
+│   │   ├── adminDeleteCourse.js
+│   │   ├── adminEditCourse.js
+│   │   ├── adminSearchCourses.js
+│   │   ├── createCourse.js
+│   │   ├── deleteCourse.js
+│   │   ├── editCourse.js
+│   │   ├── editModule.js
+│   │   ├── enrollStudent.js
+│   │   ├── getQuizUpdates.js
+│   │   ├── gradeAssignments.js
+│   │   ├── logModuleProgress.js
+│   │   ├── submitAssignment.js
+│   │   ├── toggleCourseStatus.js
+│   │   └── unenrollStudent.js
+│   ├── departments
+│   │   ├── adminSearchDepartments.js
+│   │   ├── createDepartment.js
+│   │   ├── deleteDepartment.js
+│   │   └── editDepartment.js
+│   ├── index.js
+│   ├── misc
+│   │   ├── axiosWrapper.js
+│   │   ├── checkNotifications.js
+│   │   ├── customStorage2.js
+│   │   ├── customStorage3.js
+│   │   ├── customStorageIntegrity.js
+│   │   ├── customStorage.js
+│   │   ├── generateFileUrl.js
+│   │   ├── makeEnquiry.js
+│   │   ├── markNotificationsAsRead.js
+│   │   ├── onAuthSuccess.js
+│   │   ├── reviewHelpers.js
+│   │   ├── sendNotifications.js
+│   │   └── webSocket.js
+│   ├── pages-data
+│   │   ├── adminCreateCourse.js
+│   │   ├── adminCreateDepartment.js
+│   │   ├── adminEditCourse.js
+│   │   ├── adminSearchCourses.js
+│   │   ├── adminSearchDepartments.js
+│   │   ├── adminSearchTeachers.js
+│   │   ├── adminStudents.js
+│   │   ├── allCourses.js
+│   │   ├── clearPageData.js
+│   │   ├── coursePreview.js
+│   │   ├── courseStudents.js
+│   │   ├── editProfile.js
+│   │   ├── landingPage.js
+│   │   ├── myAssignments.js
+│   │   ├── myCourseModule.js
+│   │   ├── myCourses.js
+│   │   ├── notifications.js
+│   │   ├── profile.js
+│   │   ├── teacherAssignments.js
+│   │   ├── teacherCourse.js
+│   │   ├── teacherCourses.js
+│   │   ├── teacherCreateCourse.js
+│   │   ├── teacherEditCourse.js
+│   │   ├── teacherEditModule.js
+│   │   └── teacherEditProfile.js
+│   ├── payment
+│   │   ├── openWindow.js
+│   │   └── paymentManager.js
+│   ├── students
+│   │   ├── deleteStudent.js
+│   │   └── searchStudents.js
+│   ├── teachers
+│   │   ├── adminDeleteTeacher.js
+│   │   ├── adminSearchTeachers.js
+│   │   ├── createTeacher.js
+│   │   ├── deleteTeacher.js
+│   │   └── editTeacher.js
+│   └── validators
+│       ├── index.js
+│       ├── lit
+│       │   ├── validateCategoryName.js
+│       │   └── validateSubcategoryName.js
+│       ├── validateComment.js
+│       ├── validateConfirmPassword.js
+│       ├── validateCourseBriefDescription.js
+│       ├── validateCourseDetailedDescription.js
+│       ├── validateCourseEndDate.js
+│       ├── validateCoursePrice.js
+│       ├── validateCourseStartDate.js
+│       ├── validateCourseTitle.js
+│       ├── validateDepartmentName.js
+│       ├── validateEmail.js
+│       ├── validateModuleTitle.js
+│       ├── validateName.js
+│       ├── validatePassword.js
+│       └── validateRequiredText.js
+├── store.js
+├── umd-dependencies
+│   ├── bootstrap.min.js
+│   ├── ck-editor-build-mine.js
+│   ├── ckeditor-classic.js
+│   ├── ckeditor-inline.js
+│   ├── ckeditor-online-inline.js
+│   ├── cocoon.preprocess.js
+│   ├── croppie.min.js
+│   ├── exif.min.js
+│   ├── flatpickr.min.js
+│   ├── jquery-3.3.1.js
+│   ├── script.js
+│   ├── simplebar.js
+│   ├── snackbar.min.js
+│   └── timepicker.js
+└── utilities
+    ├── asyncTask.js
+    ├── base64ToBlob.js
+    ├── blobToText.js
+    ├── ckeditor.js
+    ├── ckFileAdapterPlugin.js
+    ├── dataTransforms.js
+    ├── deepClone.js
+    ├── downloadFile.js
+    ├── fileUrlToText.js
+    ├── formValidationHelper.js
+    ├── getCurrentModule.js
+    ├── getQueryVariable.js
+    ├── handleLinkClick.js
+    ├── isCrawler.js
+    ├── onPageLoad.js
+    ├── overrideCkColors.js
+    ├── paystackInit.js
+    ├── reduxThunk.js
+    ├── toaster.js
+    └── updateDocumentHead.js
+
+25 directories, 266 files

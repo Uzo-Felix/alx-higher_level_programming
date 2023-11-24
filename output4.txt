@@ -1,0 +1,207 @@
+lms
+├── controller
+│   ├── AssignmentController.java
+│   ├── CourseController.java
+│   ├── CustomController.java
+│   ├── DepartmentController.java
+│   ├── FeedBackController.java
+│   ├── Notification.java
+│   ├── PagesController.java
+│   ├── QuizController.java
+│   ├── QuizMarkController.java
+│   ├── StudentController.java
+│   ├── StudentReportController.java
+│   ├── TeacherController.java
+│   ├── UrlController.java
+│   └── UserController.java
+├── dto
+│   ├── AdminDTO.java
+│   ├── AnsweredQuestionDTO.java
+│   ├── AssignmentDTO.java
+│   ├── AssignmentUploadDTO.java
+│   ├── CatalogDTO.java
+│   ├── CCStudentdto.java
+│   ├── CourseDTO.java
+│   ├── CoursesDTO.java
+│   ├── CoursesDTOs.java
+│   ├── DepartmentCourseDTO.java
+│   ├── DepartmentDTO.java
+│   ├── DepartmentnDTO.java
+│   ├── DepartmentStudentDTO.java
+│   ├── DepartmentsuDTO.java
+│   ├── DepartmentTeacherDTO.java
+│   ├── EmailDto.java
+│   ├── EnquiriresDTO.java
+│   ├── ExcelDataCCStudent.java
+│   ├── ExcelDataCorporateCourse.java
+│   ├── ExcelDataCourses.java
+│   ├── ExcelDataEnquiries.java
+│   ├── ExcelDataICStudent.java
+│   ├── ExcelDataIndividualCourse.java
+│   ├── ExcelDataStudent.java
+│   ├── ExcelDataTeacher.java
+│   ├── FeedBackAnswerDTO.java
+│   ├── FeedBackDTO.java
+│   ├── FeedBackQuestionDTO.java
+│   ├── ICourseDTO.java
+│   ├── ICStudentdto.java
+│   ├── IdDto.java
+│   ├── ModulesDTO.java
+│   ├── ProfilepicsDTO.java
+│   ├── QuizDTO.java
+│   ├── QuizMarkDTO.java
+│   ├── QuizM.java
+│   ├── QuizQuestionDTO.java
+│   ├── QuizQuestion.java
+│   ├── RatingDTOInstructor.java
+│   ├── RatingDTO.java
+│   ├── RegisterDTO.java
+│   ├── StudentAssignmentDTO.java
+│   ├── StudentCompletion1DTO.java
+│   ├── StudentDTO.java
+│   ├── StudentReport1DTO.java
+│   ├── StudentReport2DTO.java
+│   ├── StudentReport3DTO.java
+│   ├── StudentReport4DTO.java
+│   ├── StudentReport5DTO.java
+│   ├── StudentReport6DTO.java
+│   ├── StudentReport7DTO.java
+│   ├── StudentReport8DTO.java
+│   ├── StudentReport9DTO.java
+│   ├── SubmissionDTO.java
+│   ├── TeacherDTO.java
+│   └── TestScroeDTO.java
+├── entities
+│   ├── Roles.java
+│   └── User.java
+├── exceptions
+│   └── ResourceNotFoundException.java
+├── LitAppApplication.java
+├── model
+│   ├── Acustomdata.java
+│   ├── Admin.java
+│   ├── AnsweredQuestion.java
+│   ├── ApplicationUser.java
+│   ├── Assignment.java
+│   ├── Catalog.java
+│   ├── Categories.java
+│   ├── CCEnrollment.java
+│   ├── CCStudent.java
+│   ├── Ccustomdata.java
+│   ├── ConfirmationToken.java
+│   ├── CorporateCourse.java
+│   ├── Course.java
+│   ├── Customdata.java
+│   ├── Department.java
+│   ├── Enquiries.java
+│   ├── Enrollment.java
+│   ├── FeedBackAnswer.java
+│   ├── Feedback.java
+│   ├── FeedBackQuestion.java
+│   ├── ICEnrollment.java
+│   ├── ICStudent.java
+│   ├── idcheck2.java
+│   ├── idcheck.java
+│   ├── IndividualCourse.java
+│   ├── Modules.java
+│   ├── PayStackData.java
+│   ├── PaystackdataM.java
+│   ├── Question.java
+│   ├── Quiz.java
+│   ├── QuizMark.java
+│   ├── Rating.java
+│   ├── Reviews.java
+│   ├── StudentAssignment.java
+│   ├── StudentAssignmentPK.java
+│   ├── Student.java
+│   ├── Tcustomdata.java
+│   ├── Teacher.java
+│   ├── TEnrollment.java
+│   ├── UserForm.java
+│   ├── VerifyPayStackTransaction.java
+│   └── VeryfyTransactionServlet.java
+├── repository
+│   ├── AdminRepository.java
+│   ├── AnsweredQuestionRepository.java
+│   ├── AssignmentRepository.java
+│   ├── CatalogRepository.java
+│   ├── CategoriesRepository.java
+│   ├── CCSRepository.java
+│   ├── ConfirmationTokenRepository.java
+│   ├── CorporateCourseRepository.java
+│   ├── CourseRepository.java
+│   ├── DepartmentRepository.java
+│   ├── EnquiriesRepository.java
+│   ├── FeedBackAnswerRepository.java
+│   ├── FeedBackQuestionRepository.java
+│   ├── FeedbackRepository.java
+│   ├── ICSRepository.java
+│   ├── IndividualCourseRepository.java
+│   ├── ModulesRepository.java
+│   ├── QuestionRepository.java
+│   ├── QuizMarkRepository.java
+│   ├── QuizRepository.java
+│   ├── RatingRepository.java
+│   ├── ReviewsRepository.java
+│   ├── RoleRepository.java
+│   ├── StudentAssignmentRepository.java
+│   ├── StudentRepository.java
+│   ├── TeacherRepository.java
+│   └── UserRepository.java
+├── security
+│   ├── Config.java
+│   ├── JWTAuthenticationFilter.java
+│   ├── JWTAuthorizationFilter.java
+│   ├── MySimpleUrlAuthenticationSuccessHandler.java
+│   ├── SecurityConfig.java
+│   ├── SecurityConstants.java
+│   ├── SwaggerConfig.java
+│   ├── WebSecurityConfig2.java
+│   └── WebSecurity.java
+├── services
+│   ├── AssignmentService.java
+│   ├── constants
+│   │   └── Definitions.java
+│   ├── core
+│   │   ├── ApiConnection.java
+│   │   ├── ApiQuery.java
+│   │   ├── Customers.java
+│   │   ├── Keys.java
+│   │   ├── Pages.java
+│   │   ├── PaystackInline.java
+│   │   ├── Plans.java
+│   │   ├── Subscriptions.java
+│   │   └── Transactions.java
+│   ├── CourseService.java
+│   ├── DeparmentTeacherService.java
+│   ├── DepartmentCourseService.java
+│   ├── DepartmentService.java
+│   ├── DepartmentStudentService.java
+│   ├── EmailSenderService.java
+│   ├── ExportExcelUtilsCCStudent.java
+│   ├── ExportExcelUtilsCorporateCourse.java
+│   ├── ExportExcelUtilsCourse.java
+│   ├── ExportExcelUtilsEnquiries.java
+│   ├── ExportExcelUtilsICStudent.java
+│   ├── ExportExcelUtilsIndividualCourse.java
+│   ├── ExportExcelUtilsStudent.java
+│   ├── ExportExcelUtilsTeacher.java
+│   ├── FeedbackService.java
+│   ├── impl
+│   │   ├── SecurityServiceImpl.java
+│   │   ├── UserDetailsServiceImpl.java
+│   │   └── UserServiceImpl.java
+│   ├── ModulesService.java
+│   ├── QuizMarkService.java
+│   ├── QuizService.java
+│   ├── RatingService.java
+│   ├── SecurityService.java
+│   ├── StudentReportService.java
+│   ├── StudentService.java
+│   ├── TeacherService.java
+│   ├── UserService.java
+│   └── UserValidator.java
+└── utils
+    └── Utils.java
+
+12 directories, 192 files
